@@ -10,7 +10,7 @@
         --secondary-light: 58%;
         
         --primary: hsl(var(--primary-hue), var(--primary-sat), var(--primary-light));
-        --primary-dark: hsl(var(--primary-hue), var(--primary-sat), 32%);
+        --primary-dark: #005650;
         --primary-light: hsl(var(--primary-hue), 65%, 92%);
         --primary-glow: hsl(var(--primary-hue), var(--primary-sat), 52%);
         
@@ -149,6 +149,11 @@
         font-weight: 700;
         color: var(--primary);
         text-decoration: none;
+    }
+
+    .logo {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
     }
     
     .nav-links {
@@ -292,7 +297,7 @@
     
     .btn-outline:hover {
         background: white;
-        color: var(--primary);
+        color: var(--background);
     }
     
     /* Section */
@@ -492,7 +497,7 @@
     .aviso {
         margin-top: 3rem;
         color: var(--surface);
-        text-align: center;
+        text-align: start;
     }
 
     /* Benefits */
@@ -659,6 +664,15 @@
             box-shadow: var(--shadow-lg);
             transition: left var(--transition-smooth);
             gap: var(--space-sm);
+        }
+
+        .logo p{
+            font-size: 0rem;
+        }
+
+        .logo img {
+            height: 70px;
+            width: 70px;
         }
         
         .nav-links.active {
